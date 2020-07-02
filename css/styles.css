@@ -327,9 +327,30 @@ img {
   letter-spacing: 0.03em;
 }
 
+.example-tumb {
+  position: relative;
+}
+
+.example-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 .example-text {
   margin-top: 0;
   margin-bottom: 0;
+
+  color: var(--primary-white-color);
 }
 
 /* Команда */
