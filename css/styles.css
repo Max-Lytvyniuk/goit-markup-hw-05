@@ -96,6 +96,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -141,6 +143,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .auth-nav .link:hover,
@@ -366,44 +371,7 @@ img {
   margin-right: auto;
   width: 206px;
   padding-bottom: 21px;
-  /* flex-wrap: wrap; */
 }
-
-/* .social-item::after {
-  display: inline-block;
-  content: '';
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  margin-right: 10px;
-  padding-bottom: 21px;
-
-  background-color: greenyellow;
-
-  outline: solid 1px teal;
-} */
-
-/* .icon-inst::after {
-  background-image: url('../images/social-links/instagram.svg');
-  margin-left: 32px;
-}
-
-.icon-twit::after {
-  background-image: url('../images/social-links/twitter.svg');
-}
-
-.icon-face::after {
-  background-image: url('../images/social-links/facebook.svg');
-}
-
-.icon-link::after {
-  background-image: url('../images/social-links/linkedin.svg');
-  margin-right: 32px;
-} */
 
 .social-item {
   display: flex;
@@ -427,6 +395,8 @@ img {
   width: 44px;
 
   fill: var(--primary-social-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -456,11 +426,6 @@ img {
   text-align: center;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.team-social .link:hover,
-.team-social .link:focus {
-  color: var(--accent-color);
 }
 
 .team-tittle {
@@ -530,6 +495,9 @@ img {
 
   height: 90px;
   border-radius: 4px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-border:hover,
@@ -540,15 +508,6 @@ img {
 
 /* button! */
 .button.primary {
-  /* color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em; */
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   display: inline-block;
@@ -593,27 +552,6 @@ footer {
   margin-right: 69px;
 }
 
-/* .footer-flex-item {
-  margin-bottom: 9px;
-} */
-
-/* .invite-flex {
-  display: flex;
-  background-color: purple;
-}
-
-.social-item {
-  width: 270px;
-  margin-right: 10px;
-}
-
-.social-item:last-child {
-  margin-right: 0;
-}
-
-.social-item:nth-child(4n + 1) {
-  margin-right: 11px;
-} */
 .invite-flex {
   display: flex;
   flex-direction: column;
@@ -668,10 +606,6 @@ footer {
   letter-spacing: 0.03em;
 }
 
-/* .address-contact:last-child {
-  /* margin-bottom: 0;
-} */
-
 .invite {
   margin-top: 0;
   margin-bottom: 21px;
@@ -693,6 +627,9 @@ footer {
   width: 44px;
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .invite-icon {
@@ -721,11 +658,6 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.social-link .link:hover,
-.social-link .link:focus {
-  color: var(--accent-color);
-}
-
 /* PORTFOLIO!! */
 .portfolio-margin {
   margin-bottom: 93px;
@@ -737,26 +669,30 @@ footer {
   margin-bottom: 50px;
 }
 
-.btn .button:hover,
-.btn .button:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
-
 .button {
   margin-right: 8px;
 
   background-color: #f5f4fa;
   /* outline: 2px solid transparent; */
   border-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn .button:hover,
+.btn .button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .button:last-child {
